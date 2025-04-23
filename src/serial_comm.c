@@ -193,3 +193,8 @@ static void ProcessCommand(void)
     }
   }
 }
+
+// Função para checar se um comando foi recebido
+uint8_t SerialComm_HasReceivedCommand(void) {
+    return rxComplete;
+}

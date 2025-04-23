@@ -21,6 +21,8 @@ extern "C" {
 void SerialComm_Init(UART_HandleTypeDef *huart);
 void SerialComm_Process(void);
 void SerialComm_SendResponse(const char* message);
+// Função para checar se um comando foi recebido
+uint8_t SerialComm_HasReceivedCommand(void);
 
 #ifdef __cplusplus
 }
